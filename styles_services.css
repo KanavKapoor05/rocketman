@@ -1,0 +1,118 @@
+.parent-container1 {
+    display: flex;  /* Enables Flexbox */
+    justify-content: center; /* Centers both flexboxes */
+    gap: 20px; /* Space between flexboxes */
+}
+
+.flex-container2, .flex-container3{    
+    margin-top: 20px;;
+    margin-left: 10px;
+    flex-direction: column;/* when we need text and image vertically */
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 550px;
+    box-sizing: border-box;
+    border: 2px solid light grey;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid lightgrey;
+}
+.flex-container2{
+    margin-left: 0px;
+}
+.flex-container3{
+    margin-right: 20px;
+}
+/* to make image fit inside flex box */
+.flex-container2 img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    align-self: flex-start; /* Ensures the image starts from the top */
+}
+.flex-container2 h5{
+    font-size: 25px;
+    line-height: 0;
+}
+.flex-container2 div{
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.flex-container2 a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 40px;
+    line-height: 0%;
+    cursor: pointer;
+}
+.flex-container3 img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    align-self: flex-start; /* Ensures the image starts from the top */
+}
+.flex-container3 h5{
+    font-size: 25px;
+    line-height: 0;
+}
+.flex-container3 div{
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.flex-container3 a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 40px;
+    line-height: 0%;
+    cursor: pointer;
+}
+.flex-container4{    
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: auto;
+    flex-direction: column;/* when we need text and image vertically */
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 550px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid lightgrey;
+}
+.flex-container4 img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    align-self: flex-start; /* Ensures the image starts from the top */
+}
+.flex-container4 h5{
+    font-size: 25px;
+    line-height: 0;
+}
+.flex-container4 div{
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.flex-container4 a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 40px;
+    line-height: 0%;
+    cursor: pointer;
+}

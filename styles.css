@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 50px;
+    margin-left: 80px;
+    margin-right: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    font-style: normal; 
+    display: inline-block;
+}
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+h1::before{
+    content: "\1F680";
+    font-size: 50px;
+    margin-right: -20px;
+}
+.nav-1 a{
+    color: black;
+    text-decoration: none;
+}
+.nav-2 a{
+    color: black;
+    text-decoration: none;
+}
+.nav-3 a{
+    color: black;
+    text-decoration: none;
+}
+
+div{
+    margin-right: 10px;
+    margin-left: 40px;;
+    font-size: 25px;
+    font-style: normal;
+    display: inline;
+    
+}
+.image1{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;/* for no border us vw*/  
+}
+
+p{
+        font-size: 30px;
+        font-style: normal;
+        margin-top: 50px;
+        text-align: center;
+}
+/* IF WE WANT TO ADD FLEXBOX IN A SEQUENCE OR IN INLINE CONDITION THEN WE USE PARENT CONTAINER */
+.parent-container {
+    display: flex;  /* Enables Flexbox */
+    justify-content: center; /* Centers both flexboxes */
+    gap: 20px; /* Space between flexboxes */
+}
+
+.flex-container, .flex-container1 {    
+    margin-top: 40px;;
+    margin-left: 20px;
+    flex-direction: column;/* when we need text and image vertically */
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    box-sizing: border-box;
+    border: 2px solid light grey;
+    overflow: hidden;
+    text-align: center;
+}
+.flex-container{
+    margin-left: 0px;
+}
+.flex-container1{
+    margin-right: 20px;
+}
+/* to make image fit inside flex box */
+.flex-container img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    align-self: flex-start; /* Ensures the image starts from the top */
+}
+.flex-container h5{
+    font-size: 25px;
+    line-height: 0;
+}
+.flex-container div{
+    font-size: 20px;
+    line-height: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.flex-container a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 40px;
+    line-height: 0%;
+    cursor: pointer;
+}
+.flex-container1 img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    align-self: flex-start; /* Ensures the image starts from the top */
+}
+.flex-container1 h5{
+    font-size: 25px;
+    line-height: 0;
+}
+.flex-container1 div{
+    font-size: 20px;
+    line-height: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.flex-container1 a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 40px;
+    line-height: 0%;
+    cursor: pointer;
+}
+.image2{
+    object-fit: contain;
+    height: 60%;
+    width: 60%;
+    position: relative;
+    top: 100px;
+    left: 30px;
+}
+.flexbox-1 {
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2250px;
+    left: 630px;
+    gap: 10px;  
+    background-color: rgb(50, 50, 50); 
+    color: white; 
+    height: 300px;
+    width: 450px;
+    padding: 15px; 
+}
+.flexbox-1 h5 {
+    font-size: 40px;
+    margin: 0;
+}
+.flexbox-1 div {
+    text-align: center;
+    font-size: 20px;
+}
+.flexbox-1 a {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.image3{
+    object-fit: contain;
+    height: 60%;
+    width: 60%;
+    position: relative;
+    top: 350px;
+    left: 470px;
+}
+.flexbox-2 {
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3050px;
+    left: 100px;
+    gap: 10px;  
+    background-color: rgb(50, 50, 50); 
+    color: white; 
+    height: 300px;
+    width: 450px;
+    padding: 15px; /* Adds spacing inside the box */
+}
+.flexbox-2 h5 {
+    font-size: 40px;
+    margin: 0;
+}
+.flexbox-2 div {
+    text-align: center;
+    font-size: 20px;
+}
+.flexbox-2 a {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.image4{
+    object-fit: contain;
+    height: 60%;
+    width: 60%;
+    position: relative;
+    top: 600px;
+    left: 30px;
+}
+.flexbox-3 {
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3830px;
+    left: 630px;
+    gap: 10px;  
+    background-color: rgb(50, 50, 50); 
+    color: white; 
+    height: 300px;
+    width: 450px;
+    padding: 15px; /* Adds spacing inside the box */
+}
+.flexbox-3 h5 {
+    font-size: 40px;
+    margin: 0;
+}
+.flexbox-3 div {
+    text-align: center;
+    font-size: 20px;
+}
+.flexbox-3 a {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.p-1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 800px;
+}
+.button-1{
+    display: inline-block;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: 45%;
+    margin-right: 30%;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.button-1 a {
+    color: white;          
+    text-decoration: none;  
+    display: block;         
+}
+div.text{
+    padding: 120px;
+    display: block;
+    text-align: center;
+    line-height: 0;
+    font-style: italic;
+    font-weight: 900;
+}
+div.text .text-2{
+    font-family: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    line-height: 0;
+}
+div.text .text-2::after{
+      content: "\1F61C";
+      font-size: 20px;
+}
+.parent-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.flex-2{
+    display: flex;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    overflow: hidden;
+    background-color: rgb(138, 43, 226);
+    margin-left: 0%;
+}
+.flex-2 div{
+    display: inline-block;
+    font-size: 40px;
+    font-style: bold;
+    color: white; 
+    margin-top: 100px;
+    line-height: 0;
+    margin-left:30px;
+}
+.flex-2 p{
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 45%;
+    margin-left: 10px;  
+}
+.flex-2 a{
+    display: inline-block;
+    color: black;
+    background-color: white;
+    padding : 15px;
+    text-decoration: none;
+    margin-left: 80%;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.flex-3{
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    overflow: hidden;
+    line-height: 0;
+    padding: 15px;
+    margin-top: 0; 
+    margin-left: 0%;
+}
